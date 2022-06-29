@@ -1,4 +1,6 @@
-int number = input(32)
+#!/usr/bin/python3
+import random
+int number = random.randint(-10, 10)
 
 if number > 0:
     print("is positive)
