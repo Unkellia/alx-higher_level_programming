@@ -1,32 +1,16 @@
-#ifndef _LISTS_H_
-#define _LISTS_H_
+# 0x17. C - Doubly linked lists
 
-#include <stddef.h>
-
-/**
- * struct dlistint_s - doubly linked list
- * @n: integer
- * @prev: points to the previous node
- * @next: points to the next node
- *
- * Description: doubly linked list node structure
- * for Holberton project
- */
-typedef struct dlistint_s
-{
-	int n;
-	struct dlistint_s *prev;
-	struct dlistint_s *next;
-} dlistint_t;
-
-size_t print_dlistint(const dlistint_t *h);
-size_t dlistint_len(const dlistint_t *h);
-dlistint_t *add_dnodeint(dlistint_t **head, const int n);
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
-void free_dlistint(dlistint_t *head);
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
-int sum_dlistint(dlistint_t *head);
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
-
-#endif /* _LISTS_H_ */
+## Tasks 📃
+  
+  - 0 . [Print list](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/0-print_dlistint.c)
+  - 1 . [List length](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/1-dlistint_len.c)
+  - 2 . [Add node](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/2-add_dnodeint.c)
+  - 3 . [Add node at the end](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/3-add_dnodeint_end.c)
+  - 4 . [Free list](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/4-free_dlistint.c)
+  - 5 . [Get node at index](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/5-get_dnodeint.c)
+  - 6 . [Sum list](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/6-sum_dlistint.c)
+  - 7 . [Insert at index](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/7-insert_dnodeint.c)
+  - 8 . [Delete at index](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/8-delete_dnodeint.c)
+  - 9 . [Crackme4](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/100-password)
+  - 10 . [Palindromes](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-result)
+  - 11 . [Crackme5](https://github.com/dagemtsehay1/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/103-keygen.c)
